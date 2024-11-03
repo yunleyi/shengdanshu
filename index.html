@@ -71,10 +71,10 @@
         const audio = new THREE.Audio(listener);
 
         function loadDefaultAudio() {
-    const file = "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Simon_Panrucker/Happy_Christmas_You_Guys/Simon_Panrucker_-_01_-_Snowflakes_Falling_Down.mp3";
+    const file = "./圣诞之吻.mp3"; 
     const loader = new THREE.AudioLoader();
     loader.load(file, function (buffer) {
-        audio.setBuffer(buffer);
+        audio.setBuffer(buffer); 
         audio.setVolume(0.2); // 设置音量为 0.2
 
         audio.play(); // 播放音频
