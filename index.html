@@ -71,8 +71,8 @@
         const audio = new THREE.Audio(listener);
 
         function loadDefaultAudio() {
-    const file = "./圣诞之吻.mp3"; 
-    const loader = new THREE.AudioLoader();
+    const file = "圣诞之吻.mp3"; 
+    const loader = new THREE.AudioLoader(); 
     loader.load(file, function (buffer) {
         audio.setBuffer(buffer); 
         audio.setVolume(0.2); // 设置音量为 0.2
@@ -162,7 +162,7 @@
       float lerp(float norm, float min, float max){
        return (max - min) * norm + min;
       }
-      float map(float value, float sourceMin, float sourceMax, float destMin, float destMax){
+      float map(float value, float sourceMin, float sourceMax, float destMin, float destMax){ 
        return lerp(norm(value, sourceMin, sourceMax), destMin, destMax);
       }
       void main() {
@@ -265,7 +265,7 @@
       float lerp(float norm, float min, float max){
        return (max - min) * norm + min;
       }
-      float map(float value, float sourceMin, float sourceMax, float destMin, float destMax){
+      float map(float value, float sourceMin, float sourceMax, float destMin, float destMax){ 
        return lerp(norm(value, sourceMin, sourceMax), destMin, destMax);
       }
       void main() {
